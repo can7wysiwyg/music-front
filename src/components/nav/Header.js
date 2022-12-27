@@ -70,7 +70,7 @@ let token = JSON.parse(JSON.stringify(localStorage.getItem('token')))
                         <Nav.Item as={NavLink} href="/">Home</Nav.Item>
                         <Nav.Item as={NavLink} href="/trending_tracks">Trending Songs</Nav.Item>
                         <Nav.Item as={NavLink} href="/find_songs">Search Music</Nav.Item>
-                        <Nav.Item as={NavLink} href="/smogazboard">login</Nav.Item>
+                        
 
 
                         {

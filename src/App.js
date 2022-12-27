@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Route, Routes, HashRouter } from "react-router-dom"
 import Login from "./components/admin/Login"
 import UploadSong from "./components/admin/UploadSong"
 import UploadPhoto from "./components/admin/UploadPhoto"
@@ -26,7 +26,7 @@ function App() {
   
   return(
     <>
-    <BrowserRouter>
+    <HashRouter>
   <Header />
   
 
@@ -51,7 +51,7 @@ function App() {
     </Routes>
     
     
-    </BrowserRouter>
+    </HashRouter>
     
     </>
     
