@@ -1,4 +1,4 @@
-import { Route, Routes, HashRouter } from "react-router-dom"
+import { Route, Routes, BrowserRouter } from "react-router-dom"
 import Login from "./components/admin/Login"
 import UploadSong from "./components/admin/UploadSong"
 import UploadPhoto from "./components/admin/UploadPhoto"
@@ -26,13 +26,13 @@ function App() {
   
   return(
     <>
-    <HashRouter>
+    <BrowserRouter>
   <Header />
   
 
     <Routes>
   <Route path="/" element={<Home />} />
-      <Route path="/smogazboard" element={<Login />} />
+      <Route path="https://musicfront.onrender.com/smogazboard" element={<Login />} />
       <Route path="/upload_song" element={ <UploadSong/> } />
       <Route path="/upload_photo" element={ <UploadPhoto /> } />
       <Route path="/music" element={<Music />} />
@@ -51,7 +51,7 @@ function App() {
     </Routes>
     
     
-    </HashRouter>
+    </BrowserRouter>
     
     </>
     
