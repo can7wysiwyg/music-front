@@ -32,7 +32,7 @@ function App() {
 
     <Routes>
   <Route path="/" element={<Home />} />
-      <Route path="https://musicfront.onrender.com/smogazboard" element={<Login />} />
+      <Route path="/smogazboard" element={<Login />} />
       <Route path="/upload_song" element={ <UploadSong/> } />
       <Route path="/upload_photo" element={ <UploadPhoto /> } />
       <Route path="/music" element={<Music />} />
